@@ -21,3 +21,12 @@ k = find(abs(y-0.3) < 0.001)
 % L = length(X)
 X = zeros(3,7);
 L = length(X)
+
+% linspace 生成等间距的一组向量
+% y = linspace(x1,x2) 返回包含 x1 和 x2 之间的 100 个等间距点的行向量。返回值包含有  x1 和 x2 
+% y = linspace(x1,x2,n) 生成 n 个点。这些点的间距为 (x2-x1)/(n-1)
+y = linspace(-5,5,5)
+
+% logspace 生成等间距的一组向量
+% y = logspace(a,b) a,b(10 的 N 次幂)，生成一个由在 10^a 和 10^b（10 的 N 次幂）之间的 50 个对数间距点组成的行向量 y
+% y = logspace(a,b,n) 
