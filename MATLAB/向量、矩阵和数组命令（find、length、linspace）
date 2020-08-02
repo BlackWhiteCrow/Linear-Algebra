@@ -1,0 +1,23 @@
+% find 查找矩阵中的非零元素
+% k = find(x)
+% k = find(x,n)
+% k = find(x,n,direction)
+
+% 查找矩阵中的非零元素
+X = [1 0 2; 0 1 1; 0 0 4]
+k = find(X)
+
+% 查找满足一个（或多个）条件的元素
+X = magic(4);
+k = find(x<5,5)
+% [row,col] = find(X>0 & X<10,3)
+
+% 查找等于特定值的元素，设置容差，防止因浮点数误差找不到该元素
+y = 0:0.1:1
+k = find(abs(y-0.3) < 0.001)
+
+
+% length 最大数组维度的长度
+% L = length(X)
+X = zeros(3,7);
+L = length(X)
