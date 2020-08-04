@@ -1,6 +1,6 @@
 % find 查找矩阵中的非零元素
 % k = find(x)
-% k = find(x,n)
+% k = find(x,n) 返回与 X 中的非零元素对应的前 n 个索引
 % k = find(x,n,direction)
 
 % 查找矩阵中的非零元素
