@@ -18,8 +18,16 @@ length(ch)
 
 % 比较字符串 
 %（1）关系式比较 <>=等
-%（2）函数比较 
+%（2）函数比较 strcmp(s1,s2) 比较s1 s2 是否相等,返回1或0 strncmp(s1,s2,n)  比较s1 s2 前 n 个元素是否相等
+% strcmpi(s1,s2) 忽略大小写比较s1 s2 是否相等，strncmpi(s1,s2)
 'www0'>'W123'
+% 字符串中的字符查找与替换
+% findstr(s1,s2) 返回短字符串在长字符串中的初始位置
+% strrep(s1,s2,s3) 将 s1 中的所有子字符串 s2 替换为 s3
 
-strcmp()
+findstr('This is a test','is')
+findstr('is','This is a test')
+
+strrep('This is a test','test','class')
+
 
