@@ -2,9 +2,13 @@
 ch = 'ABc123d4e56Fg9';
 subch = ch(1:5)
 % 将字符串顺序倒过来重新排列 = 反向提取字符值
-revch = ch(end:-1:1)
+revch = ch(end:-1:1) 
 % 将字符串中的小写字符变成大写字符
 
-k = find(ch>='a'&ch<='z')  % 根据ASCII 表找到小写字符
+k = find(ch>='a'&ch<='z')  % 根据ASCII码表找到小写字符
 ch(k) = ch(k)-('a'-'A')  % 字符串加减法
+% 输出 ch = 'ABC123D4E56FG9'  而不是  ch(k) = 'CDEG'
+
+% 字符串长度
+length(ch)
 
